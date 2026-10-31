@@ -56,7 +56,7 @@ src/
 
 ## 🌐 Live Demo
 
-👉 Experience the live application here: **[Matcha Ground Preview](https://your-project-name.vercel.app)** *(실제 Vercel 배포 주소 입력)*
+👉 Experience the live application here: **[Matcha Ground Preview](https://matcha-ground.vercel.app/)**
 
 ---
 
