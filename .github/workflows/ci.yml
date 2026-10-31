@@ -1,0 +1,28 @@
+name: React CI
+
+# 언제 이 자동화 동작이 실행될 것인가?
+on:
+  push:
+    branches: ["main"] # main 브랜치에 코드가 push될 때마다 작동!
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # 최신 리눅스 환경에서 실행
+
+    steps:
+      - name: 1. 깃허브에 올라온 내 코드 내려받기
+        uses: actions/checkout@v4
+
+      - name: 2. Node.js 세팅하기
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: 3. 패키지 설치하기
+        run: npm install
+
+      - name: 4. 빌드 테스트 실행하기 (에러 나는지 검사!)
+        run: npm run build
