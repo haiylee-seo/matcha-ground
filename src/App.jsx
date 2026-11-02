@@ -1,10 +1,12 @@
 // import { useState } from 'react'
 // import axios from 'axios'
-import { BrowserRouter, Routes, Route, Link, useParams } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // import MobileLayout from './layout/MobileLayout';
+import MainLayout from './layout/MainLayout';
 import Home from './pages/Home';
 import Order from './pages/Order';
-import MainLayout from './layout/MainLayout';
+import Locations from './pages/Locations';
+import Mypage from './pages/Mypage';
 // import useCartStore from './store/useCartStore';
 // import { useQuery } from '@tanstack/react-query';
 
@@ -17,6 +19,8 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/order" element={<Order />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="/mypage" element={<Mypage />} />
         </Route>
         
         {/* '/product/숫자' 주소일 때는 상세 페이지 보여주기 */}

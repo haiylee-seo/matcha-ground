@@ -1,9 +1,19 @@
 // src/pages/Order.jsx
 export default function Order() {
     return (
-      <div>
-        <h2>주문 내역 화면</h2>
-        <p>장바구니와 진행 중인 주문이 여기에 표시됩니다.</p>
-      </div>
+      <>
+        <p className="bg-[#FBF9F5] shadow-lg py-6 px-6">Order</p>
+        <div className="bg-[#FBF9F5] shadow-lg py-6 px-6 flex justify-between gap-4">
+            <div className="flex flex-col gap-4">
+                <span>Menu</span>
+            </div>
+            <div className="flex flex-col gap-4">
+                <span>Previous</span>
+            </div>
+            <div className="flex flex-col gap-4">
+                <span>favourites</span>
+            </div>
+        </div>
+      </>
     );
   }
