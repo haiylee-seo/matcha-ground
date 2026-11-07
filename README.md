@@ -124,7 +124,7 @@ src/
  ┣ pages/           # 주요 탭 화면 (Home, Order, Rewards, MyPage)
  ┣ context/         # 전역 상태 관리 (장바구니, 유저 정보 등)
  ┣ assets/          # 이미지 및 폰트 리소스
- ┗ App.js           # 라우팅 설정
+ ┗ App.jsx           # 라우팅 설정
 
 ```
 ````
