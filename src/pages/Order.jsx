@@ -6,7 +6,7 @@ export default function Order() {
   const [activeTab, setActiveTab] = useState("menu");
   return (
     <>
-      <ul className="bg-[#FBF9F5] w-full flex justify-between items-center shadow-lg">
+      <ul className="sticky top-16 z-50 bg-[#FBF9F5] w-full flex justify-between items-center shadow-lg">
         <li
           onClick={() => setActiveTab("menu")}
           className={`flex-1 py-2 px-2 text-center transition-all ${

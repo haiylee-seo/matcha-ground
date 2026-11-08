@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Mypage() {
   // 알림 설정 상태 관리 (true: 켜짐, false: 꺼짐)
@@ -16,9 +17,14 @@ export default function Mypage() {
         <li>
           <p className="text-lg font-bold">Account</p>
           <ul className="text-sm">
-            <li className="flex items-center justify-between py-2 mb-2">
-              <p>personal info</p>
-              <ChevronRight className="w-4 h-4" />
+            <li>
+              <Link
+                to="/mypage/personal-info"
+                className="flex items-center justify-between py-2 mb-2"
+              >
+                <p>personal info</p>
+                <ChevronRight className="w-4 h-4" />
+              </Link>
             </li>
             <li>
               <div className="flex items-center justify-between py-2 mb-2">
