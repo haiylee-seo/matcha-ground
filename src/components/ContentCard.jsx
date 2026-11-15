@@ -1,8 +1,11 @@
 import heroImg from "../assets/hero.png";
 
-export default function ContentCard() {
+export default function ContentCard({ onClick }) {
   return (
-    <li className="bg-[#FBF9F5] h-[250px] shadow-lg mx-4 rounded-xl overflow-hidden">
+    <li
+      onClick={onClick}
+      className="bg-[#FBF9F5] h-[250px] shadow-lg mx-4 rounded-xl overflow-hidden"
+    >
       <div className="bg-[#ee87aa] h-[60%] w-full">
         <img src={heroImg} alt="Hero" className="h-full object-cover mx-auto" />
       </div>
